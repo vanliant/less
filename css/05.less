@@ -1,9 +1,9 @@
 //定义混合
-.juzhong{
+.juzhong(@w,@h,@c:pink){
     position: absolute;
-    background:pink;
-    height:100px;
-    width:100px;
+    background:@c;
+    height:@h;
+    width:@w;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -23,9 +23,9 @@
     border:1px solid;
     margin: 0 auto;
     .inner{
-        .juzhong
+        .juzhong(200px,200px)
     }
     .inner2{
-        .juzhong
+        .juzhong(100px,100px,deeppink)
     }
 }
