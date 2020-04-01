@@ -1,0 +1,31 @@
+//定义混合
+.juzhong{
+    position: absolute;
+    background:pink;
+    height:100px;
+    width:100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    &:hover{
+        background: black;
+    }
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+#warp{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border:1px solid;
+    margin: 0 auto;
+    .inner{
+        .juzhong
+    }
+    .inner2{
+        .juzhong
+    }
+}
